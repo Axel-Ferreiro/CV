@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../styles/formulariosstyles.css">
+</head>
+<body>
+
+
+    <!--  *? Cuando hacemos un imput hay que encerrarlo en un form -->
+    <form action="" id="formulario-datos">
+
+        <h1>Complete el siguiente formulario</h1>
+        
+        <!-- *? En cada for debe ir asociado el nombre del input en cuestion -->
+        <label for="nombreUsuario">Ingrese su nombre</label>
+        <input type="text" name="nombreUsuario"><br><br>
+        
+        <label for="contrasenaUsuario">Ingrese su contrasena</label>
+        <input type="password" name="contrasenaUsuario"><br><br>
+
+        <label for="edadUsuario">Ingrese su edad</label>
+        <input type="number" name="edadUsuario"><br><br>
+
+        <label for="nacimientoUsuario">Ingrese su fecha de nacimiento</label>
+        <input type="date" name="nacimientoUsuario"><br><br>
+
+        <label for="partidaNacimieto">Seleccione su partida de nacimiento</label><br><br>
+        <input type="file" name="partidaNacimieto">
+        <br><br>
+
+        <label for="colorfv">Ingrese su color favorito</label>
+        <input type="color" name="colorfv"><br><br>
+
+
+        <label for="sexo">Indique su sexo.</label>
+        <div class="Selector-sexo">
+        <input type="radio" name="sexo" value="masculino" checked class="input-radio-sexo">Masculino
+        <input type="radio" name="sexo" value="femenino" class="input-radio-sexo">Femenino<br><br>
+        </div>
+
+        <label for="lesiones" >Tuvo algun desgarro? Seleccione si es afirmativo</label>
+        <input type="checkbox" name="lesiones" id="checkbox-lesiones" ><br><br>
+
+        <!-- *? La misma logica de siempre tengo un elemento select para poner adentro varias opciones -->
+        <label for="marca">Ingrese su marca favorita</label>
+        <select name="marca" >
+            <option value=""></option>
+            <option value="adidas">Adidas</option>
+            <option value="nile">Nike</option>
+            <option value="fila">Fila</option>
+        </select><br><br>
+
+        <label for="descripcion">Descibanos como se siente</label><br>
+        <textarea name="descripcion" placeholder="Ingrese texto aqui"></textarea><br><br>
+
+        <!-- *? Por ahora lo dejamos como button para q no haga nada, pero por ahora -->
+        <button type="button">Enviar datos.</button>
+
+    </form>
+
+
+
+</body>
+</html>
